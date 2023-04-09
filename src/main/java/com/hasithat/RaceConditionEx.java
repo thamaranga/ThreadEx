@@ -25,7 +25,7 @@ public class RaceConditionEx {
             t1.start();
             t2.start();
 
-            //We are asking main thread to wait until t1 and t2 complete there tasks.
+            //We are asking main thread to wait until t1 and t2 complete their tasks.
             t1.join();
             t2.join();
             /*Here below output will not print as 20000. This is because single Counter object is shared among several threads.
